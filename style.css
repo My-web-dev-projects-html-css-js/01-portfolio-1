@@ -111,6 +111,18 @@ header{
     font-size: 6rem;
     letter-spacing: 0.1rem;
     font-weight: 700;
-    margin-bottom: 8rem;
     margin-top: 3rem;
+}
+
+.social-icos li a i{
+    padding: 8px;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    color: darkblue;
+    font-size: 3rem;
+    
+    &:hover{
+        box-shadow: 0px 0px 10px 10px rgba(235, 232, 232, 0.2);
+    }
 }
