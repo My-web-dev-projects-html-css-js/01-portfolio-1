@@ -313,7 +313,6 @@ header{
         -o-border-radius: 2%;
         
         &:hover{
-            /* scale: 1.06; */
             cursor: pointer;
         }
 
@@ -328,6 +327,36 @@ header{
         }
         & .passed{
             color: rgb(156, 159, 162);
+        }
+        &:nth-child(2n+1)::after{
+            position: absolute;
+            top: 45%;
+            right: -18%;
+            content: '';
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            width: 1.4rem;
+            height: 1.4rem;
+            background-color: darkblue;
+            z-index: 7;
+        }
+        &:nth-child(2n)::after{
+            position: absolute;
+            top: 45%;
+            left: -17%;
+            content: '';
+            border-radius: 50%;
+            -webkit-border-radius:;
+            -moz-border-radius:;
+            -ms-border-radius:;
+            -o-border-radius:;
+            width: 1.4rem;
+            height: 1.4rem;
+            background-color: darkblue;
+            z-index: 9;
         }
     }
 }
