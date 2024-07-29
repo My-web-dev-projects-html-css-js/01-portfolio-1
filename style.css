@@ -40,6 +40,9 @@ li{
 a{
     text-decoration: none;
 }
+.text-center{
+    text-align: center;
+}
 
 
 /* structure of the page */
@@ -57,7 +60,15 @@ main section:nth-child(2n){
 
 
 
-
+/* header section */
+header{
+    height: 50vh;
+    background-image: url(banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.8;
+}
 
 
 
