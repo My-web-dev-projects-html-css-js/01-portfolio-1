@@ -540,6 +540,105 @@ header{
 
 
 
+/* media query for iPadAir */
+@media screen and (max-width:820px){
+    #about{
+        & #my-image{
+            position: absolute;
+            left: 30rem;
+            top: -14rem;
+        }
+    }
 
+    header{
+        height: 50vh;
+    }
+
+    #about{
+        & p{
+            padding: 16rem 10rem;
+        }
+    }
+
+    
+    .timeline{
+        position: relative;
+        width: 64%;
+    
+        & .timeline-box{
+            position: relative;
+            left: 2%;
+            width: 99%;
+            margin-bottom: 2rem;
+            
+            &:hover{
+                cursor: pointer;
+            }
+    
+            & .degree{
+                font-size: 2.4rem;
+                padding-top: 4rem;
+                padding-bottom: 2rem;
+            }
+            & .college{
+                font-size: 1.7rem;
+                padding-bottom: 3rem;
+            }
+            & .passed{
+                color: rgb(156, 159, 162);
+            }
+            &:nth-child(2n+1)::after{
+                position: absolute;
+                top: 45%;
+                left: -18.2%;
+                
+            }
+            &:nth-child(2n)::after{
+                position: absolute;
+                top: 45%;
+                left: -18%;
+            }
+        }
+    }
+
+    .timeline-divider{
+        left: -15%;
+    }
+    
+    #portfolio .container-projects{
+        width: 90%;
+        margin-right: 7%;
+    }
+
+    #portfolio .container-projects .main-card{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 7rem;
+
+        & .project{
+            padding: 2rem 2rem;
+            width: 100%;
+                
+            & .btn{
+                padding: 0.7rem 1.1rem;
+            }
+        }
+    }
+
+
+    #contact {
+        height: 65vh;
+
+        & .contact-card{
+            width: 80%;
+        }
+        
+        & p img{
+            height: 6%;
+            width: 6%;
+        }
+    }
+    
+}
 
 
