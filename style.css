@@ -27,7 +27,7 @@ li{
 }
 :root{
     --main-color: #0062ff;
-    --supporting-color: #ebf3fe;
+    --supporting-color: #f1f4f8;
     --font-color: #424242;
     --heading-color: #000a19;
     --hero-heading-color: #003b99;
@@ -128,7 +128,6 @@ header{
 }
 
 
-/* about section */
 /*About section*/
 #about{
     height: auto;
@@ -139,7 +138,7 @@ header{
         height: 25rem;
         width: 25rem;
         position: absolute;
-        left: 80rem;
+        left: 83rem;
         top: -14rem;
         z-index: 10; 
     
@@ -148,7 +147,7 @@ header{
             height: 100%;
             width: 100%;
             border-radius: 50%;
-            box-shadow:0px 0px 5px 3px white;
+            box-shadow:0px 0px 0.6rem 0.5rem white;
         }
     }
 
@@ -157,4 +156,125 @@ header{
     }
 }
 
+
+/* skill-section */
+#skills{
+    height: auto;
+}
+
+.section-heading{
+    color: rgb(239, 36, 36);
+    margin-bottom: 15rem;
+    margin-top: 1rem;
+    font-size: 4rem;
+}
+
+.skills-display{
+    width: 63%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem auto;
+   
+    & .skills-progress{
+        height: 4rem;
+        width: 20rem;
+        background-color:  darkgray;
+        margin: 0rem 3rem 4rem 2rem;
+        border-radius: 3rem;
+        -webkit-border-radius: 3rem;
+        -moz-border-radius: 3rem;
+        -ms-border-radius: 3rem;
+        -o-border-radius: 3rem;
+        margin: 1rem 5rem 5rem 1rem;
+    }
+
+}
+
+.skills-display .skills-name span{
+    display: inline-block;
+    color: white;
+    margin-left: 10px;
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
+.html-skill{
+    width: 90%;
+    height: inherit;
+    border-radius: 20px 0px 0px 20px;
+    background-color: blue;
+}
+.css-skill{
+    width:70%;
+    height: inherit;
+    border-radius: 20px 0px 0px 20px;
+    background-color: fuchsia;
+}
+.bootstrap-skill{
+    width:70%;
+    height: inherit;
+    border-radius: 20px 0px 0px 20px;
+    background-color: rgb(156, 229, 22);
+}
+
+.tailwind-skill{
+    width:70%;
+    height: inherit;
+    border-radius: 20px 0px 0px 20px;
+    background-color: rgb(18, 96, 31);
+}
+
+
+.javascript-skill{
+    width: 70%;
+    height: inherit;
+    border-radius: 20px 0px 0px 20px;
+    background-color: hotpink;
+}
+.git-skill{
+    width: 80%;
+    height: inherit;
+    border-radius: 20px 0px 0px 20px;
+    background-color: rgb(58, 18, 218);
+}
+
+
+.jquery-skill{
+    width:70%;
+    height: inherit;
+    border-radius: 20px 0px 0px 20px;
+    background-color: rgb(15, 193, 217);
+}
+
+.react-skill{
+    width: 85%;
+    height: inherit;
+    border-radius: 20px 0px 0px 20px;
+    background-color: rgb(148, 82, 15);
+}
+
+.java-skill{
+    width: 80%;
+    height: inherit;
+    border-radius: 20px 0px 0px 20px;
+    background-color: orange;
+}
+
+.spring-skill{
+    width: 60%;
+    height: inherit;
+    border-radius: 20px 0px 0px 20px;
+    background-color: purple;
+}
+
+
+.hibernate-skill{
+    width: 70%;
+    height: inherit;
+    border-radius: 20px 0px 0px 20px;
+    background-color: rgb(244, 40, 40);
+}
 
