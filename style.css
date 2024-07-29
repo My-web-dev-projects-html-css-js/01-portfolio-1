@@ -331,7 +331,7 @@ header{
         &:nth-child(2n+1)::after{
             position: absolute;
             top: 45%;
-            right: -18%;
+            right: -18.1%;
             content: '';
             border-radius: 50%;
             -webkit-border-radius: 50%;
@@ -346,7 +346,7 @@ header{
         &:nth-child(2n)::after{
             position: absolute;
             top: 45%;
-            left: -17%;
+            left: -17.2%;
             content: '';
             border-radius: 50%;
             -webkit-border-radius:;
@@ -359,4 +359,13 @@ header{
             z-index: 9;
         }
     }
+}
+
+.timeline-divider{
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    height: 75%;
+    width: 0px;
+    border: 2px dashed rgb(166, 38, 166);
 }
