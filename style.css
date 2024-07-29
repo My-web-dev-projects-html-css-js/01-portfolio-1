@@ -363,9 +363,31 @@ header{
 
 .timeline-divider{
     position: absolute;
-    top: 12%;
+    top: 11%;
     left: 50%;
     height: 75%;
     width: 0px;
     border: 2px dashed rgb(166, 38, 166);
+
+   & .plane{
+    position: sticky;
+    top: 24%;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    
+        & i{
+            font-size: 4rem;
+            color: rgb(199, 67, 7);
+        }
+    }
+}
+
+#portfolio{
+    width: 90%;
+    height: 90vh;
+    border: 1px solid saddlebrown;
+    
 }
