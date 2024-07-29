@@ -70,5 +70,38 @@ header{
     opacity: 0.8;
 }
 
+.horizontal-list{
+    list-style: none;
+    margin: auto;
+}
+.horizontal-list li{
+    padding: 8px 12px;
+    display: inline-block;
+    margin: 0px 8px;
+}
+.horizontal-list li a{
+    text-decoration: none;    
+}
+.nav-menu li a{
+    color: var(--white-color);
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+}
 
-
+.nav-menu li a::after{
+    content: "";
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid var(--white-color);
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+.nav-menu li a:hover::after{
+    width: 100%;
+}
