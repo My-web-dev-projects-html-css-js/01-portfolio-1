@@ -62,7 +62,7 @@ main section:nth-child(2n){
 
 /* header section */
 header{
-    height: 50vh;
+    height: 60vh;
     background-image: url(banner.jpg);
     background-size: cover;
     background-position: center;
@@ -111,7 +111,19 @@ header{
     font-size: 6rem;
     letter-spacing: 0.1rem;
     font-weight: 700;
-    margin-top: 3rem;
+    margin-top: 1rem;
+}
+
+.role-name{
+    color: rgb(243, 99, 99);
+    font-size: 4rem;
+    font-weight: 200;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    & span{
+        font-weight: 800;
+    }
 }
 
 .social-icos li a i{
@@ -239,6 +251,10 @@ header{
     height: inherit;
     border-radius: 20px 0px 0px 20px;
     background-color: rgb(58, 18, 218);
+    -webkit-border-radius: 20px 0px 0px 20px;
+    -moz-border-radius: 20px 0px 0px 20px;
+    -ms-border-radius: 20px 0px 0px 20px;
+    -o-border-radius: 20px 0px 0px 20px;
 }
 
 
@@ -521,3 +537,9 @@ header{
     height: 3%;
     width: 3%;
 }
+
+
+
+
+
+
