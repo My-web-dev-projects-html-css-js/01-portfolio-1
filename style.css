@@ -164,7 +164,39 @@ header{
     }
 
     & p{
-        padding: 15rem 40rem;
+        padding: 15rem 40rem 5rem;
+    }
+
+    & .btn-container{
+        margin-bottom: 7rem;
+        
+        & .btn{
+            
+            display: inline-block;
+            border: 1px solid black;
+            padding: 0.7rem 2rem;
+            color: black;
+            font-weight: 600;
+    
+        }
+
+        & .download{
+            width: 17rem;
+            height: 3rem;
+            margin-right: 3rem;
+            background-color: black;
+            color: white;
+            border-radius: 4rem;
+            -webkit-border-radius: 4rem;
+            -moz-border-radius: 4rem;
+            -ms-border-radius: 4rem;
+            -o-border-radius: 4rem;
+        }
+        & .github{
+            background-color: white;
+            color: black;
+        }
+        
     }
 }
 
@@ -687,6 +719,38 @@ header{
             text-align: justify;
             padding: 26rem 10rem;
             font-size: 5rem;
+        }
+
+        & .btn-container{
+            margin-bottom: 7rem;
+            
+            & .btn{
+                
+                display: inline-block;
+                border: 1px solid black;
+                padding: 1.5rem 2rem;
+                color: black;
+                font-weight: 600;
+        
+            }
+    
+            & .download{
+                width: 35rem;
+                height: 6rem;
+                margin-right: 3rem;
+                background-color: black;
+                color: white;
+                font-size: 3rem;
+            }
+            & .github{
+                font-size: 3rem;
+                height: 6rem;
+                width: 20rem;
+                /* height: 10rem; */
+                /* background-color: white; */
+                /* color: black; */
+            }
+            
         }
     }
 
