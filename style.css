@@ -494,7 +494,7 @@ header{
 
 /*contact section*/
 #contact {
-    height: 80vh;
+    height: auto;
     width: 100%;
     background: linear-gradient(to top left, rgba(8, 181, 233, 0.8),rgba(4, 15, 211, 0.7));
 }
@@ -643,3 +643,197 @@ header{
 
 
 
+/* media query for iphone 12 bro */
+@media screen and (min-width:200px) and (max-width:399px){
+    header{
+        width: 280%;
+        height: 80vh;
+    }
+
+    .role-name{
+        font-weight: 400;
+    }
+    
+    .nav-menu{
+        position: absolute;
+        left: 5%;
+        top: 10%;
+    }
+    .nav-menu li{
+        display: inline;
+        text-align: start;
+    }
+    .nav-menu li a{
+        display: block;
+        font-size: 4rem;
+    }
+
+    .social-icos li a i{
+        font-size: 5rem;
+    }
+
+    #about{
+        width: 280%;
+    
+        & #my-image{
+            height: 40rem;
+            width: 40rem;
+            position: absolute;
+            left: 37rem;
+            top: -20rem;
+        }
+    
+        & p{
+            text-align: justify;
+            padding: 26rem 10rem;
+            font-size: 5rem;
+        }
+    }
+
+    #skills{
+        width: 280%;
+        height: auto;
+    }
+
+    .section-heading{
+        color: rgb(239, 36, 36);
+        margin-bottom: 15rem;
+        margin-top: 1rem;
+        font-size: 8rem;
+    }
+    
+    .skills-display{
+        width: 80%;
+        display: grid;
+        
+        
+       
+        & .skills-progress{
+            height: 8rem;
+            width: 60rem;
+        }
+    
+    }
+    
+    .skills-display .skills-name span{
+        font-size: 4.2rem;
+        font-weight: 600;
+    }
+
+
+    #education{
+        width: 280%;
+        padding-top: 4rem;
+    }
+    
+   
+    .timeline{
+        position: relative;
+        width: 64%;
+    
+        & .timeline-box{
+            position: relative;
+            left: 2%;
+            width: 100%;
+            margin-bottom: 2rem;
+            height: 40rem;
+            
+            &:hover{
+                cursor: pointer;
+            }
+    
+            & .degree{
+                font-size: 5rem;
+                padding-top: 4rem;
+                padding-bottom: 2rem;
+            }
+            & .college{
+                font-size: 3.5rem;
+                padding-bottom: 3rem;
+            }
+            & .passed{
+                font-size: 3rem;
+                color: rgb(156, 159, 162);
+            }
+            &:nth-child(2n+1)::after{
+                position: absolute;
+                top: 45%;
+                left: -18.2%;
+                
+            }
+            &:nth-child(2n)::after{
+                position: absolute;
+                top: 45%;
+                left: -18%;
+            }
+        }
+    }
+
+    .timeline-divider{
+        left: -15%;
+    }   
+
+
+#portfolio{
+    width: 280%;
+
+    & .heading-project-section{
+        font-size: 3.5rem;
+    }
+}
+
+#portfolio .container-projects{
+    margin-left:18%;  
+    width: 70%;
+}
+
+#portfolio .container-projects .main-card{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 7rem;
+    margin-bottom: 20rem;
+
+    & .project{
+        & .project-btn-container{
+            padding: 0rem 2rem;
+        }
+         
+        & .btn{
+            font-size: 4rem;
+        }
+        & .heading-project{
+            margin-bottom:20rem;
+            font-size: 5rem;
+        }
+
+        & .btn-github{
+            margin-right: 4rem;
+        }
+        
+    }
+}
+
+    #contact {
+        height: auto;
+        width: 280%;
+
+        & .contact-card{
+            width: 80%;
+            margin-bottom: 20rem;
+
+            & p{
+                font-size: 3rem;
+            }
+
+            & h3{
+                font-size: 4rem;
+            }
+        
+            & p img{
+                height: 6%;
+                width: 6%;
+            }
+    }
+}
+
+}
