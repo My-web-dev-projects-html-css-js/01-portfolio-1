@@ -403,22 +403,19 @@ header{
 
 
 /* portfolio section */
+
 #portfolio .heading-project-section{
     font-size: 2rem;
     padding-bottom: 10rem;
     width: 100%;
     padding-bottom: 4rem;
     color: darkblue;
+    height: auto;
 }
 
 #portfolio .container-projects{
     margin: 0 auto;  
-    display: grid;
-    grid-template-rows: repeat(3,1fr);
-    align-items: center;
-    justify-items: center;
     width: 65%;
-    height: 60rem;   
 }
 
 #portfolio .container-projects .main-card{
@@ -479,7 +476,7 @@ header{
 
         &:hover{
             scale: 1.06;
-}
+        }
         
     }
 }
@@ -492,6 +489,7 @@ header{
 }
 .backtend-projects .project{
     background-color: #f6ba95;
+    margin-bottom: 5rem;
 }
 
 /*contact section*/
@@ -541,7 +539,7 @@ header{
 
 
 /* media query for iPadAir */
-@media screen and (max-width:820px){
+@media screen and (min-width:400px) and (max-width:820px){
     #about{
         & #my-image{
             position: absolute;
@@ -640,5 +638,8 @@ header{
     }
     
 }
+
+
+
 
 
