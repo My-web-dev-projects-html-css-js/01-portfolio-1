@@ -364,6 +364,7 @@ header{
     }
 
     & .timeline-box{
+       
         position: relative;
         width: 43%;
         align-items: center;
@@ -377,7 +378,8 @@ header{
         -ms-border-radius: 2%;
         -o-border-radius: 2%;
         
-        &:hover{
+        &:hover
+        {
             cursor: pointer;
         }
 
@@ -424,6 +426,33 @@ header{
             z-index: 9;
         }
     }
+}
+
+.timeline .timeline-box:nth-child(2n+1){
+    animation: moveBox 0.5s linear;
+    -webkit-animation: moveBox 0.5s linear;
+}
+.timeline .timeline-box:nth-child(2n){
+    animation: moveBox 0.5s linear;
+    -webkit-animation: moveBox 0.5s linear;
+}
+
+
+@keyframes moveBox {
+    from{
+        transform: scale(0.2);
+        -webkit-transform: scale(0.2);
+        -moz-transform: scale(0.2);
+        -ms-transform: scale(0.2);
+        -o-transform: scale(0.2);
+}
+    to{
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+}
 }
 
 .timeline-divider{
