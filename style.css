@@ -232,10 +232,20 @@ header{
         -ms-border-radius: 3rem;
         -o-border-radius: 3rem;
         margin: 1rem 5rem 5rem 1rem;
-        
+        animation: loadSkills 4s linear 0.2s 1 forwards;
+        -webkit-animation: loadSkills 4s linear 0.2s 1 forwards;
+    }
 }
 
-}
+/* Animation keyframes */
+@keyframes loadSkills {
+    0% { width: 0; }
+    20% { width: 4%; }
+    40% { width: 8%; }
+    60% { width: 12%; }
+    80% { width: 16%; }
+    100% { width: 20%; }
+  }
 
 .skills-display .skills-name span{
     display: inline-block;
